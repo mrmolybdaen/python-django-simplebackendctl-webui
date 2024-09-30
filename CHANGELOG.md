@@ -1,4 +1,4 @@
-python-flask-haposctl-webui (0.1.0) main; urgency=low
+python-django-haposctl-webui (0.1.0) main; urgency=low
 
   * INIT
 
