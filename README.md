@@ -14,7 +14,15 @@ The project is called _haposctl-webui_ or HAProxy Open Source Controller WebUI.
 
 ### Requirements
 
+See `requirements.txt`
+In production you will need a WSGI service and a webserver such as Gunicor and Nginx.
 
+- Django
+- django[argon2,bcrypt]
+- numpy
+- argon2 >= 0.1
+- bcrypt >= 4.2
+- haproxyctl
 
 #### Test
 
@@ -23,6 +31,16 @@ The project is called _haposctl-webui_ or HAProxy Open Source Controller WebUI.
 ### How to install
 
 ### Configuration
+
+#### `src/haposctl_webui/haposctl_webui/settings.py`
+
+1. Change `SECRET_KEY` to a save and secret value.
+2. Change `DEBUG` to `False`
+3. Change `LANGUAGE_CODE` according to your needs. Default is `'de-de'`
+4. Change `TIME_ZONE` according to your needs. Default is `'Europe/Berlin'`
+5. Change `ALLOWED_HOSTS` according to your needs. Default is `['*']`
+6. Set up your database connections with `DATABASE`. By default, a SQLITE database is used.
+
 
 ## Contribute
 
