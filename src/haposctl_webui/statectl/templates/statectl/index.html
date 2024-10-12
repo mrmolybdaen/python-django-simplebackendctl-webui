@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>haposctl-webui</title>
+  </head>
+  <body>
+{% if haposctl_backend_server_list is defined %}
+    <p>Backend server available!</p>
+{% else % }
+    <p>No backend server configured!</p>
+{% endif %}
+  </body>
+</html>
