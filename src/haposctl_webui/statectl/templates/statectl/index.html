@@ -1,14 +1,16 @@
-<!doctype html>
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <title>haposctl-webui</title>
-  </head>
-  <body>
-{% if haposctl_backend_server_list is defined %}
-    <p>Backend server available!</p>
-{% else % }
-    <p>No backend server configured!</p>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<h2>HAProxy backend controls</h2>
+{% if haposctl_backend_server_list is defined and haposctl_backend_server_list is not None %}
+          <p>Backend server available!</p>
+{% else %}
+          <p>No backend server configured!</p>
 {% endif %}
-  </body>
-</html>
+{% else %}
+          <p>You are not logged in! Nothing to see here.</p>
+          <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}

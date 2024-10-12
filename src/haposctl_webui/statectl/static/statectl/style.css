@@ -1,0 +1,81 @@
+body {
+  background-color: #03192a;
+  color: #90bbca;
+  margin: 0.2%!important;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.toppane {
+  display: inline-flex;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(#03192a, #073d67), radial-gradient(ellipse at top left, #03192a, #073d67);
+  margin-left: .2%;
+  margin-right: .2%;
+  margin-bottom: .2%;
+  text-align: left;
+  border-radius: 17px;
+  padding: 0.2% .2%;
+}
+
+.toppane h1 {
+  margin: .4% .5% 0;
+}
+
+.menupange {
+  width: 100%;
+  height: 25px;
+  background-color: #073d67;
+  margin-left: .2%;
+  margin-right: .2%;
+  margin-bottom: .2%;
+  text-align: left;
+  padding: 0.2% 0.2%
+}
+
+.leftpane {
+  width: 15%;
+  height: 100vh;
+  background-color: #03192a;
+}
+
+.middlepane {
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(8, 65, 113, 0.2);
+  margin: .2% .2% .2%;
+  padding: .1% .8% .2%;
+}
+
+.middlepane a {
+  text-decoration: underline;
+  color: white;
+  padding: .2% .2% .2%;
+}
+
+.rightpane {
+  width: 15%;
+  height: 100vh;
+  background-color: #03192a;
+}
+
+.bottompane {
+  width: 100%;
+  height: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.button {
+  background-color: grey;
+}
+
+.button:hover {
+  background-color: green;
+}

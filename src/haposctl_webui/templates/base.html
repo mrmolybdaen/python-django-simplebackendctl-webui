@@ -1,17 +1,25 @@
 <!-- templates/base.html -->
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
-</head>
-
-<body>
-  <main>
-    {% block content %}
-    {% endblock %}
-  </main>
-</body>
-
+<!doctype html>
+{% load static %}
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>haposctl-webui</title>
+    <link rel="stylesheet" href="{% static 'statectl/style.css' %}">
+  </head>
+  <body>
+    <div id="container">
+      <div id="toppane" class="toppane">
+            <h1>haposctl-webui</h1>
+      </div>
+      <div class="d-flex">
+        <div id="leftpane" class="leftpane"></div>
+        <div id="middlepane" class="middlepane">
+{% block content %}
+{% endblock %}
+        </div>
+          <div id="rightpane" class="rightpane"></div>
+      </div>
+    </div>
+  </body>
 </html>

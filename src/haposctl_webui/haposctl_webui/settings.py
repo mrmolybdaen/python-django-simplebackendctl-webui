@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1m9fo9^#-ooefpra+yiyx2p8dv@u4a$!qmc0*-d)b9!ss^&0ux'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Set this value to an existing domain or list of domains
 # When DEBUG = True, this is set to ['.localhost', '127.0.0.1', '[::1]'].
 # Values beginning with periods ('.example.com') will validate subdomains
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
