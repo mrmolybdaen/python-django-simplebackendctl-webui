@@ -51,4 +51,4 @@ repos:
     hooks:
       - id: detect-secrets
         name: Detect secrets
-        args: [--baseline, .secrets.baseline]
+        args: ['--baseline', '.secrets.baseline']
