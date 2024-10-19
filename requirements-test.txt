@@ -5,3 +5,8 @@ django-simple-history>=3.7
 argon2>=0.1
 bcrypt>=4.2
 hcloud>=2.3
+pre-commit
+flake8-docstrings
+flake8-black
+flake8-bandit
+pylint

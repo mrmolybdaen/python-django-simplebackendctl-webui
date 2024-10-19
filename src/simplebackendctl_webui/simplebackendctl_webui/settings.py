@@ -33,7 +33,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    # Backend theme
+    'unfold',
+    'unfold.contrib.simple_history',
+    'unfold.contrib.inlines',
+    'unfold.contrib.forms',
+    'unfold.contrib.filters',
+    # Our simple application
     'statectl.apps.StatectlConfig',
+    # Django base stuff
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

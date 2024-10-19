@@ -76,6 +76,34 @@ body {
   background-color: grey;
 }
 
-.button:hover {
+.button:active button {
+  background-color: #5555FF;
+}
+
+.button:hover button {
   background-color: green;
+}
+
+.delete button {
+  background-color: #FF0000;
+}
+
+.button:hover button {
+  background-color: #FF2222;
+}
+
+.maintenance button {
+  background-color: #FFCC34;
+}
+
+.maintenance:hover button {
+  background-color: #BB9900;
+}
+
+.ready button {
+  background-color: #22DD22;
+}
+
+.ready:hover button {
+  background-color: #44FF44;
 }

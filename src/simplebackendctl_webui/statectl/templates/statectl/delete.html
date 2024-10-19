@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Delete {{ server.name }}</h1>
+<form action="{% url 'statectl/server' %}" method="delete">
+      {% csrf_token %}
+      <button type="submit">Delete</button>
+</form>
+{% endblock %}

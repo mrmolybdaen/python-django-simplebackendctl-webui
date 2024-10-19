@@ -1,14 +1,14 @@
-# python-django-haposctl-webui
+# python-django-simplebackendctl-webui
 
 This project aims to provide a simplified web based user interface to switch between maintenance and ready/up states
 in HAProxy Open Source edition.
 If You are using HAProxy Enterprise edition you already have a sufficient UI to control your proxy.
 
-The application uses the HAProxy backend to post specific states. This means it uses the stats site to manage states.
+By default, the application uses the HAProxy backend to post specific states. This means it uses the stats site to manage states.
 This way one does not have to publish an application which has to write into the HAProxy socket which can do a lot more
 than the statistics backend.
 
-The project is called _haposctl-webui_ or HAProxy Open Source Controller WebUI.
+The project also provides controls for Hetzner Cloud API routing and floating IP to manage which server should be attached.
 
 ## Install
 

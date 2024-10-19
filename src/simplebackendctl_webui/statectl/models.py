@@ -8,6 +8,8 @@ class StatectlServer(models.Model):
     """This class provides the model for a project to switch between maint and up.
     """
 
+    name = models.CharField('Name', max_length=50)
+
     # URI to haproxy status page
     proxy_url = models.CharField(max_length=256, unique=False, null=False, blank=False)
     # Authentication credentials for HAProxy backend - this is dangerous!

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<form action="{% url 'statectl:create' statectl_server.id %}" method="post">
+{% csrf_token %}
+<fieldset>
+    <legend><h1>{{ statectl_server.proxy_url_text }}</h1></legend>
+
+</fieldset>
+<input type="submit" value="Vote">
+</form>
+{% endblock %}
