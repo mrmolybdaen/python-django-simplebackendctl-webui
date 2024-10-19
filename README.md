@@ -10,6 +10,8 @@ than the statistics backend.
 
 The project also provides controls for Hetzner Cloud API routing and floating IP to manage which server should be attached.
 
+Despite the lengthy repository name just call it "Simple backend controller".
+
 ## Install
 
 ### Requirements
@@ -32,7 +34,7 @@ In production you will need a WSGI service and a webserver such as Gunicor and N
 
 ### Configuration
 
-#### `src/haposctl_webui/haposctl_webui/settings.py`
+#### `src/simplebackendctl_webui/simplebackendctl_webui/settings.py`
 
 1. Change `SECRET_KEY` to a save and secret value.
 2. Change `DEBUG` to `False`
