@@ -10,12 +10,12 @@ def index(request):
 
         One can set states to MAINT or UP here.
     """
-    try:
-        server = StatectlServer.objects.all()
-    except StatectlServer.DoesNotExist:
-        raise Http404('Server not found ...')
-    return render(request, 'statectl/index.html', {'server': server})
-
+    #try:
+    #    server = StatectlServer.objects.all()
+    #except StatectlServer.DoesNotExist:
+    #    raise Http404('Server not found ...')
+    #return render(request, 'statectl/index.html', {'server': server})
+    return HttpResponse('test')
 
 def servers_manage(request):
     """This view will manage server configurations

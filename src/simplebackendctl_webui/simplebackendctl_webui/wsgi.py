@@ -1,5 +1,5 @@
 """
-WSGI config for haposctl_webui project.
+WSGI config for simplebackendctl_webui project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'haposctl_webui.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simplebackendctl_webui.settings')
 
 application = get_wsgi_application()

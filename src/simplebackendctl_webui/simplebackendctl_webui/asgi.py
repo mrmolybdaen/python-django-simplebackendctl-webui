@@ -1,5 +1,5 @@
 """
-ASGI config for haposctl_webui project.
+ASGI config for simplebackendctl_webui project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'haposctl_webui.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'simplebackendctl_webui.settings')
 
 application = get_asgi_application()

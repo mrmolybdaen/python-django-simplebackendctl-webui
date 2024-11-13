@@ -1,5 +1,5 @@
 """
-URL configuration for haposctl_webui project.
+URL configuration for simplebackendctl_webui project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -21,7 +21,8 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ctl/', include('statectl.urls')),
+    path('admin/polls/', include('polls.urls')),
+    path('admin/ctl/', include('statectl.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
